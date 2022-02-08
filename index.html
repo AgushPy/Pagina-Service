@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--CSS Iconos-->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--CSS-->
+    <link href='style.css' rel='stylesheet'>
+
+    <!--CSS fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div class="menunav">
+        <nav>
+            <ul>
+                <div class="bandeja">
+                <li> <a href="#">Empleados</a></li>
+                <li><a href="#">Nuestro Servicio</a></li>
+                <li><a href="#">Contacto</a></li>
+                </div>
+                <div class="redes">
+                <!--<li class="display-mini"><a href="#">Redes</a></li>-->
+                <li><i class='bx bxl-facebook'></i></li>
+                <li><i class='bx bxl-instagram'></i></li>
+                <li><i class='bx bxl-github'></i></li>
+                <li><i class='bx bxl-linkedin'></i></li>
+                </div>
+            </ul>    
+        </nav>
+    </div>
+    </header>
+
+    <section>
+        <article>
+            <button type="button" class="display-mini open" onclick="ver()"><i class='bx bx-menu'></i></button>
+            
+            
+            <div id="barrera">
+                <button type="button" class="close" onclick="ocultar()"><i class='bx bx-x'></i></button>
+            <ul>
+                <br>
+                <li><a href="#">¿Cómo Somos?</a></li><br>
+                <li><a href="#">Donde trabajamos'</a></li><br>
+                <li><a href="#">¿Que hacemos?</a></li><br>
+                <li><a href="#">Visión</a></li><br>
+                <li><a href="#">Institucional</a></li><br>
+            </ul>
+            </div>
+            
+            
+            <div class="barra">
+                
+                <div class="navbarra">
+                <ul>
+                    <li><a href="#">¿Cómo Somos?</a></li>
+                    <li><a href="#">Donde trabajamos</a></li>
+                    <li><a href="#">¿Que hacemos?</a></li>
+                    <li><a href="#">Visión</a></li>
+                    <li><a href="#">Institucional</a></li>
+                </ul>
+                </div>
+                <img src="img/Logos.png" class="makup-barra">
+            </div>
+        </article>        
+
+        <article>
+            <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        
+        <div class="fondodiv">
+            <img src="img/business-work-area.jpg" class="fondo">
+            
+        </div>
+    </div>
+  
+    <div class="mySlides fade">
+        <div class="fondodiv">
+            <img src="img/business-work-area.jpg" class="fondo">
+            
+        </div>
+    </div>
+  
+    <div class="mySlides fade">
+        <div class="fondodiv">
+            <img src="img/business-work-area.jpg" class="fondo">
+            
+        </div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+            
+        <div class="textodiv">
+            
+           Trabajar con nosotros puede mejorar tu rendimiento de negocios
+           
+        </div>
+        <div class="textodiv1 display-mini">
+            <br>
+            <i class='bx bx-right-arrow '></i> Trabajar con nosotros puede mejorar tu rendimiento de negocios
+           
+        </div>
+        <script src="js/carru.js">
+
+        </script>
+            
+        </article>
+
+        <article>
+            <br><br><br>
+        <div class="textocen">
+            <p>Con nuestros servicios de consultoria podras mejorar tus estadandares de venta.
+            Ademas con la expansión digital que encuentras hoy día <br>
+        y nuestros sistemas de gestion para revisar tus progresos y visitas<br>
+    vas a poder tener un control total sobre tu crecimiento </p>
+    <br>
+    <img src="img/Plan-de-negocios.png" class="nego">
+    <img src="img/Plan-de-negocios.png" class="nego1 display-mini">  
+    <br>
+</div>      
+
+</article>
+
+    </section>
+<br><br><br><br>
+    <footer>
+
+        <div class="contacto">
+            <form action="" id="contacts">
+              Nombre <i class='bx bxs-user-account'></i>: <input type="text" placeholder="Nombre"><br><br>
+              Email <i class='bx bx-mail-send'></i>: <input type="email" name="" id="" placeholder="supp@hotmail.com"><br><br>
+              Numero <i class='bx bxl-whatsapp'></i>: <input type="number" name="" id="" placeholder="+5411444555"><br><br>
+              Mensaje <i class='bx bxs-message-rounded-dots' ></i>: <input type="text" style="height: 5rem;"><br><br>
+              <input type="submit" value="Enviar" class="bots">
+              <br>
+            </form>
+          </div>
+
+    </footer>
+
+    <script>
+         ver = () =>{
+        menuvar = document.getElementById('barrera');
+        menuvar.style= 'display: block';
+        }
+        ocultar = () =>{
+        menuvar = document.getElementById('barrera');
+        menuvar.style = 'display: none';
+        }
+
+
+        
+    </script>
+</body>
+</html>
